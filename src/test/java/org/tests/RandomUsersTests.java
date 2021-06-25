@@ -1,7 +1,7 @@
 package org.tests;
 
 import org.apache.http.HttpStatus;
-import org.core.BaseTests;
+import org.core.BaseTest;
 import org.junit.Test;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -10,9 +10,8 @@ import java.util.Random;
 
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
-import static io.restassured.matcher.RestAssuredMatchers.*;
 
-public class RandomUsersTests extends BaseTests {
+public class RandomUsersTests extends BaseTest {
 
     @Test
     public void testReturningRandomUser(){
